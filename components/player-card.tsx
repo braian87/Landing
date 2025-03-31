@@ -21,6 +21,12 @@ export default function PlayerCard({ name, position, team, image }: PlayerCardPr
         <div className="p-4">
           <h3 className="text-xl font-semibold text-blue-800 group-hover:text-blue-600 transition-colors">{name}</h3>
         </div>
+        <div className="p-4">
+          <h4 className="text-xl font-semibold text-blue-800 group-hover:text-blue-600 transition-colors">{position}</h4>
+        </div>
+        <div className="p-4">
+          <h4 className="text-xl font-semibold text-blue-800 group-hover:text-blue-600 transition-colors">{team}</h4>
+        </div>
       </div>
     </Link>
   )
