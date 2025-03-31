@@ -13,7 +13,7 @@ export default function Home() {
   const whatsappUrl = `https://wa.me/${whatsappNumber}`
 
   const players = [
-    { name: "Lionel Messi", position: "Delantero", team: "Inter Miami", description: "Lionel Messi es un crack" image: "/messi.png?height=200&width=300" },
+    { name: "Lionel Messi", position: "Delantero", team: "Inter Miami", description: "Lionel Messi es un crack", image: "/messi.png?height=200&width=300" },
     { name: "Ángel Di María", image: "/dimaria.png?height=200&width=300" },
     { name: "Emiliano 'Dibu' Martínez", image: "/dibu.png?height=200&width=300" },
     { name: "Nahuel Molina", image: "/molina.png?height=200&width=300" },
