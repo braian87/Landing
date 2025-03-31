@@ -21,7 +21,7 @@ export default function PlayerCard({ name, position, team, image }: PlayerCardPr
           />
         </div>
         <div className="p-4">
-          <h3 className="text-xl font-semibold text-blue-800 group-hover:text-blue-600 transition-colors">{name}</h3>
+          <h3 className="text-xl font-semibold text-blue-800 group-hover:text-blue-600 transition-colors">{position}</h3>
         </div>
         <div className="p-4">
           <p className="text-xl font-semibold text-blue-800 group-hover:text-blue-600 transition-colors">{position}</p>
@@ -29,9 +29,6 @@ export default function PlayerCard({ name, position, team, image }: PlayerCardPr
         <div className="p-4">
           <p className="text-xl font-semibold text-blue-800 group-hover:text-blue-600 transition-colors">{team}</p>
         </div>
-      </div>
-      <div> 
-           <p> Hola</p> 
       </div>
     </Link>
   )
