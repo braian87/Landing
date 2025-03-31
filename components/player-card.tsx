@@ -6,7 +6,7 @@ interface PlayerCardProps {
   image: string
   position: string
   team: string
-  descripcion: string
+  description: string
 
 }
  
@@ -32,7 +32,7 @@ export default function PlayerCard({ name, position, team, image }: PlayerCardPr
           <h4 className="text-xl font-semibold text-blue-800 group-hover:text-blue-600 transition-colors">{team}</h4>
         </div>
         <div className="p-4">
-          <p className="text-xl font-semibold text-blue-800 group-hover:text-blue-600 transition-colors">{descripcion}</p>
+          <p className="text-xl font-semibold text-blue-800 group-hover:text-blue-600 transition-colors">{description}</p>
         </div>
       </div>
     </Link>
