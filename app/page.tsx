@@ -166,7 +166,7 @@ export default function Home() {
              
             <div className="mt-12 rounded-xl overflow-hidden shadow-xl">
               <Image
-                src="/imagenreprecentativa.png?height=500&width=1000"
+                src="/campeones2022.png?height=500&width=1000"
                 alt="Variedad de plantas y flores en Vivero Madre"
                 width={1000}
                 height={500}
