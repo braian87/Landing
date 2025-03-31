@@ -99,7 +99,7 @@ export default function Home() {
       <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-sm shadow-sm">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center gap-3">
-            <Logo width={50} height={50} className="rounded-full" />
+            <img src="/logo.png" width={50} height={50} className="rounded-full" alt="Logo" />
             <h1 className="text-2xl font-bold text-blue-800">Vivero Madre</h1>
           </div>
 
@@ -365,7 +365,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="flex items-center gap-3 mb-4 md:mb-0">
-              <Logo width={40} height={40} className="rounded-full bg-white" />
+             <img src="/logo.png" width={50} height={50} className="rounded-full" alt="Logo" />
               <h2 className="text-xl font-bold">Vivero Madre</h2>
             </div>
 
