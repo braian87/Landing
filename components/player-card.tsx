@@ -14,6 +14,8 @@ export default function PlayerCard({ name, position, team, image }: PlayerCardPr
           <Image
             src={image || "/placeholder.svg"}
             alt={name}
+            alt={position}
+            alt={team}
             fill
             className="object-cover transition-transform duration-300 group-hover:scale-110"
           />
