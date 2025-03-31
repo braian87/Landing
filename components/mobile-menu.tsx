@@ -14,7 +14,7 @@ export default function MobileMenu() {
   return (
     <div className="relative">
       <details ref={detailsRef} className="group [&_summary::-webkit-details-marker]:hidden">
-        <summary className="flex cursor-pointer items-center justify-center rounded-md bg-green-600 p-2 text-white hover:bg-green-700">
+        <summary className="flex cursor-pointer items-center justify-center rounded-md bg-blue-600 p-2 text-white hover:bg-blue-700">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -37,42 +37,42 @@ export default function MobileMenu() {
           <div className="p-2">
             <a
               href="#inicio"
-              className="block rounded-lg px-4 py-2 text-green-700 hover:bg-green-50"
+              className="block rounded-lg px-4 py-2 text-blue-700 hover:bg-blue-50"
               onClick={handleLinkClick}
             >
               Inicio
             </a>
             <a
               href="#categorias"
-              className="block rounded-lg px-4 py-2 text-green-700 hover:bg-green-50"
+              className="block rounded-lg px-4 py-2 text-blue-700 hover:bg-blue-50"
               onClick={handleLinkClick}
             >
               Categorías
             </a>
             <a
               href="#servicios"
-              className="block rounded-lg px-4 py-2 text-green-700 hover:bg-green-50"
+              className="block rounded-lg px-4 py-2 text-blue-700 hover:bg-blue-50"
               onClick={handleLinkClick}
             >
               Servicios
             </a>
             <a
               href="#productos"
-              className="block rounded-lg px-4 py-2 text-green-700 hover:bg-green-50"
+              className="block rounded-lg px-4 py-2 text-blue-700 hover:bg-blue-50"
               onClick={handleLinkClick}
             >
               Productos
             </a>
             <a
               href="#nosotros"
-              className="block rounded-lg px-4 py-2 text-green-700 hover:bg-green-50"
+              className="block rounded-lg px-4 py-2 text-blue-700 hover:bg-blue-50"
               onClick={handleLinkClick}
             >
               Nosotros
             </a>
             <a
               href="#contacto"
-              className="block rounded-lg px-4 py-2 text-green-700 hover:bg-green-50"
+              className="block rounded-lg px-4 py-2 text-blue-700 hover:bg-blue-50"
               onClick={handleLinkClick}
             >
               Contacto

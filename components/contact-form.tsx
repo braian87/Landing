@@ -115,7 +115,7 @@ export default function ContactForm({ whatsappNumber }: ContactFormProps) {
         />
       </div>
 
-      <Button type="submit" className="w-full bg-green-600 hover:bg-green-700 text-white">
+      <Button type="submit" className="w-full bg-blue-600 hover:bg-blue-700 text-white">
         Enviar a WhatsApp
       </Button>
     </form>

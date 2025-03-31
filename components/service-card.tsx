@@ -13,8 +13,8 @@ export default function ServiceCard({ name, description, image }: ServiceCardPro
         <Image src={image || "/placeholder.svg"} alt={name} fill className="object-cover" />
       </div>
       <div className="p-6">
-        <h3 className="text-xl font-semibold text-green-800 mb-2">{name}</h3>
-        <p className="text-green-700">{description}</p>
+        <h3 className="text-xl font-semibold text-blue-800 mb-2">{name}</h3>
+        <p className="text-blue-700">{description}</p>
       </div>
     </div>
   )

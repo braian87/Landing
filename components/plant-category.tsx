@@ -19,7 +19,7 @@ export default function PlantCategory({ name, image }: PlantCategoryProps) {
           />
         </div>
         <div className="p-4">
-          <h3 className="text-xl font-semibold text-green-800 group-hover:text-green-600 transition-colors">{name}</h3>
+          <h3 className="text-xl font-semibold text-blue-800 group-hover:text-blue-600 transition-colors">{name}</h3>
         </div>
       </div>
     </Link>
