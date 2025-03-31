@@ -6,8 +6,8 @@ interface PlayerCardProps {
   image: string
 }
 
-export default function PlayerCard({ name, image }: PlayerCardProps) {
-  return (
+export default function PlayerCard({ name, position, team, image }: PlayerCardProps) {
+  return 
     <Link href="#" className="group">
       <div className="overflow-hidden rounded-xl bg-white shadow-md transition-all duration-300 group-hover:shadow-xl">
         <div className="relative h-48 w-full overflow-hidden">
