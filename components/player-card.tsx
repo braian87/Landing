@@ -4,6 +4,10 @@ import Link from "next/link"
 interface PlayerCardProps {
   name: string
   image: string
+  position: string
+  team: string
+  descripcion: string
+
 }
  
 export default function PlayerCard({ name, position, team, image }: PlayerCardProps) {
@@ -20,6 +24,15 @@ export default function PlayerCard({ name, position, team, image }: PlayerCardPr
         </div>
         <div className="p-4">
           <h3 className="text-xl font-semibold text-blue-800 group-hover:text-blue-600 transition-colors">{name}</h3>
+        </div>
+        <div className="p-4">
+          <h4 className="text-xl font-semibold text-blue-800 group-hover:text-blue-600 transition-colors">{position}</h4>
+        </div>
+        <div className="p-4">
+          <h4 className="text-xl font-semibold text-blue-800 group-hover:text-blue-600 transition-colors">{team}</h4>
+        </div>
+        <div className="p-4">
+          <p className="text-xl font-semibold text-blue-800 group-hover:text-blue-600 transition-colors">{descripcion}</p>
         </div>
       </div>
     </Link>
