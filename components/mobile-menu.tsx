@@ -43,25 +43,25 @@ export default function MobileMenu() {
               Inicio
             </a>
             <a
-              href="#categorias"
+              href="#jugadores"
               className="block rounded-lg px-4 py-2 text-blue-700 hover:bg-blue-50"
               onClick={handleLinkClick}
             >
-              Categorías
+              Jugadores
             </a>
             <a
-              href="#servicios"
+              href="#logros"
               className="block rounded-lg px-4 py-2 text-blue-700 hover:bg-blue-50"
               onClick={handleLinkClick}
             >
-              Servicios
+              Logros
             </a>
             <a
-              href="#productos"
+              href="#historia"
               className="block rounded-lg px-4 py-2 text-blue-700 hover:bg-blue-50"
               onClick={handleLinkClick}
             >
-              Productos
+              Historia
             </a>
             <a
               href="#nosotros"
