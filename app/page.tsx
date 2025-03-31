@@ -6,40 +6,203 @@ import AchievementCard from "@/components/achievement-card"
 import HistorySection from "@/components/history-section"
 import WhatsAppButton from "@/components/whatsapp-button"
 import MobileMenu from "@/components/mobile-menu"
-import Logo from "@/components/logo"
 
 export default function Home() {
   const whatsappNumber = "+5491163604558"
   const whatsappUrl = `https://wa.me/${whatsappNumber}`
 
   const players = [
-    { name: "Lionel Messi", position: "Delantero", team: "Inter Miami", description: "Lionel Messi es un crack", image: "/messi.png?height=200&width=300" },
-    { name: "Ángel Di María", image: "/dimaria.png?height=200&width=300" },
-    { name: "Emiliano 'Dibu' Martínez", image: "/dibu.png?height=200&width=300" },
-    { name: "Nahuel Molina", image: "/molina.png?height=200&width=300" },
-    { name: "Cristian 'Cuti' Romero", image: "/romero.png?height=200&width=300" },
-    { name: "Nicolás Otamendi", image: "/otamendi.png?height=200&width=300" },
-    { name: "Nicolás Tagliafico", image: "/tagliafico.png?height=200&width=300" },
-    { name: "Rodrigo De Paul", image: "/depaul.png?height=200&width=300" },
-    { name: "Enzo Fernández", image: "/enzo.png?height=200&width=300" },
-    { name: "Alexis Mac Allister", image: "/macallister.png?height=200&width=300" },
-    { name: "Julián Álvarez", image: "/julian.png?height=200&width=300" },
-    { name: "Franco Armani", image: "/armani.png?height=200&width=300" },
-    { name: "Gerónimo Rulli", image: "/rulli.png?height=200&width=300" },
-    { name: "Juan Foyth", image: "/foyth.png?height=200&width=300" },
-    { name: "Gonzalo Montiel", image: "/montiel.png?height=200&width=300" },
-    { name: "Germán Pezzella", image: "/pezzella.png?height=200&width=300" },
-    { name: "Marcos Acuña", image: "/acuña.png?height=200&width=300" },
-    { name: "Lisandro Martínez", image: "/lisandro.png?height=200&width=300" },
-    { name: "Leandro Paredes", image: "/paredes.png?height=200&width=300" },
-    { name: "Exequiel Palacios", image: "/palacios.png?height=200&width=300" },
-    { name: "Guido Rodríguez", image: "/guido.png?height=200&width=300" },
-    { name: "Paulo Dybala", image: "/dybala.png?height=200&width=300" },
-    { name: "Lautaro Martínez", image: "/lautaro.png?height=200&width=300" },
-    { name: "Ángel Correa", image: "/correa.png?height=200&width=300" },
-    { name: "Thiago Almada", image: "/almada.png?height=200&width=300" },
-    { name: "Alejandro 'Papu' Gómez", image: "/papu.png?height=200&width=300" }
-  ] 
+    {
+      name: "Lionel Messi",
+      position: "Delantero",
+      team: "Inter Miami",
+      description:
+        "Considerado el mejor jugador del mundo y uno de los mejores de todos los tiempos. Capitán de la selección y líder del equipo campeón del mundo en Qatar 2022.",
+      image: "/messi.png?height=200&width=300",
+    },
+    {
+      name: "Ángel Di María",
+      position: "Extremo",
+      team: "Benfica",
+      description:
+        "Jugador clave en las finales de Copa América 2021, Finalissima 2022 y Mundial 2022. Conocido por su velocidad y precisión en los centros.",
+      image: "/dimaria.png?height=200&width=300",
+    },
+    {
+      name: "Emiliano 'Dibu' Martínez",
+      position: "Arquero",
+      team: "Aston Villa",
+      description:
+        "Héroe en las tandas de penales durante la Copa América 2021 y el Mundial 2022. Ganador del premio Yashin al mejor portero del mundo.",
+      image: "/dibu.png?height=200&width=300",
+    },
+    {
+      name: "Nahuel Molina",
+      position: "Lateral Derecho",
+      team: "Atlético Madrid",
+      description:
+        "Defensor con gran proyección ofensiva. Anotó un gol crucial contra Países Bajos en cuartos de final del Mundial 2022.",
+      image: "/molina.png?height=200&width=300",
+    },
+    {
+      name: "Cristian 'Cuti' Romero",
+      position: "Defensor Central",
+      team: "Tottenham Hotspur",
+      description:
+        "Defensor aguerrido y líder de la línea defensiva. Conocido por su capacidad para anticipar y su juego físico.",
+      image: "/romero.png?height=200&width=300",
+    },
+    {
+      name: "Nicolás Otamendi",
+      position: "Defensor Central",
+      team: "Benfica",
+      description: "Veterano de la defensa y pieza clave en la solidez defensiva del equipo campeón del mundo.",
+      image: "/otamendi.png?height=200&width=300",
+    },
+    {
+      name: "Nicolás Tagliafico",
+      position: "Lateral Izquierdo",
+      team: "Lyon",
+      description: "Defensor sólido con buena capacidad para sumarse al ataque. Campeón del mundo en Qatar 2022.",
+      image: "/tagliafico.png?height=200&width=300",
+    },
+    {
+      name: "Rodrigo De Paul",
+      position: "Mediocampista",
+      team: "Atlético Madrid",
+      description:
+        "El motor del mediocampo argentino. Conocido como 'el motorcito' por su incansable despliegue físico.",
+      image: "/depaul.png?height=200&width=300",
+    },
+    {
+      name: "Enzo Fernández",
+      position: "Mediocampista",
+      team: "Chelsea",
+      description: "Mejor jugador joven del Mundial 2022. Destacado por su visión de juego y precisión en los pases.",
+      image: "/enzo.png?height=200&width=300",
+    },
+    {
+      name: "Alexis Mac Allister",
+      position: "Mediocampista",
+      team: "Liverpool",
+      description: "Mediocampista versátil con llegada al gol. Pieza fundamental en el esquema de Scaloni.",
+      image: "/macallister.png?height=200&width=300",
+    },
+    {
+      name: "Julián Álvarez",
+      position: "Delantero",
+      team: "Manchester City",
+      description: "La 'Araña' Álvarez. Delantero con gran movilidad y definición. Anotó 4 goles en el Mundial 2022.",
+      image: "/julian.png?height=200&width=300",
+    },
+    {
+      name: "Franco Armani",
+      position: "Arquero",
+      team: "River Plate",
+      description: "Portero experimentado y referente del fútbol argentino. Campeón del mundo en Qatar 2022.",
+      image: "/armani.png?height=200&width=300",
+    },
+    {
+      name: "Gerónimo Rulli",
+      position: "Arquero",
+      team: "Ajax",
+      description: "Portero con gran juego con los pies. Parte del plantel campeón del mundo en Qatar 2022.",
+      image: "/rulli.png?height=200&width=300",
+    },
+    {
+      name: "Juan Foyth",
+      position: "Defensor",
+      team: "Villarreal",
+      description: "Defensor versátil capaz de jugar como central o lateral. Campeón del mundo en Qatar 2022.",
+      image: "/foyth.png?height=200&width=300",
+    },
+    {
+      name: "Gonzalo Montiel",
+      position: "Lateral Derecho",
+      team: "Nottingham Forest",
+      description: "Autor del penal decisivo en la final del Mundial 2022. Defensor sólido y confiable.",
+      image: "/montiel.png?height=200&width=300",
+    },
+    {
+      name: "Germán Pezzella",
+      position: "Defensor Central",
+      team: "Real Betis",
+      description: "Defensor experimentado con buen juego aéreo. Campeón del mundo en Qatar 2022.",
+      image: "/pezzella.png?height=200&width=300",
+    },
+    {
+      name: "Marcos Acuña",
+      position: "Lateral Izquierdo",
+      team: "Sevilla",
+      description: "Conocido como 'el Huevo'. Lateral con gran capacidad física y ofensiva.",
+      image: "/acuña.png?height=200&width=300",
+    },
+    {
+      name: "Lisandro Martínez",
+      position: "Defensor Central",
+      team: "Manchester United",
+      description: "Apodado 'el Carnicero'. Defensor aguerrido con excelente salida de balón.",
+      image: "/lisandro.png?height=200&width=300",
+    },
+    {
+      name: "Leandro Paredes",
+      position: "Mediocampista",
+      team: "Roma",
+      description: "Mediocampista con gran visión de juego y precisión en los pases largos.",
+      image: "/paredes.png?height=200&width=300",
+    },
+    {
+      name: "Exequiel Palacios",
+      position: "Mediocampista",
+      team: "Bayer Leverkusen",
+      description: "Mediocampista versátil con buen manejo de balón y capacidad de recuperación.",
+      image: "/palacios.png?height=200&width=300",
+    },
+    {
+      name: "Guido Rodríguez",
+      position: "Mediocampista",
+      team: "Real Betis",
+      description: "Mediocampista defensivo con gran capacidad de recuperación y buen posicionamiento.",
+      image: "/guido.png?height=200&width=300",
+    },
+    {
+      name: "Paulo Dybala",
+      position: "Delantero",
+      team: "Roma",
+      description: "La 'Joya'. Delantero técnico con gran calidad en el último pase y definición.",
+      image: "/dybala.png?height=200&width=300",
+    },
+    {
+      name: "Lautaro Martínez",
+      position: "Delantero",
+      team: "Inter de Milán",
+      description:
+        "El 'Toro'. Delantero potente con gran definición. Anotó el penal decisivo contra Países Bajos en Qatar 2022.",
+      image: "/lautaro.png?height=200&width=300",
+    },
+    {
+      name: "Ángel Correa",
+      position: "Delantero",
+      team: "Atlético Madrid",
+      description: "Delantero versátil con gran movilidad y capacidad de desequilibrio en espacios reducidos.",
+      image: "/correa.png?height=200&width=300",
+    },
+    {
+      name: "Thiago Almada",
+      position: "Mediocampista Ofensivo",
+      team: "Atlanta United",
+      description:
+        "Joven talento con gran técnica y visión de juego. El jugador más joven del plantel campeón del mundo.",
+      image: "/almada.png?height=200&width=300",
+    },
+    {
+      name: "Alejandro 'Papu' Gómez",
+      position: "Mediocampista Ofensivo",
+      team: "Monza",
+      description: "Jugador experimentado con gran calidad técnica. Campeón de América en 2021 y del mundo en 2022.",
+      image: "/papu.png?height=200&width=300",
+    },
+  ]
 
   const achievements = [
     {
@@ -68,7 +231,7 @@ export default function Home() {
       image: "/mundialclubes.png?height=200&width=300",
     },
   ]
-  
+
   const historySections = [
     {
       name: "Orígenes",
@@ -158,9 +321,11 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <p className="text-lg md:text-xl text-sky-700 mb-8">
-              La Selección Argentina de Fútbol, también conocida como "La Albiceleste" o "La Scaloneta", es el equipo que representa a Argentina en las competiciones oficiales de fútbol masculino. Con tres Copas del Mundo y múltiples Copas América, es uno de los equipos más exitosos y respetados del mundo.
+              La Selección Argentina de Fútbol, también conocida como "La Albiceleste" o "La Scaloneta", es el equipo
+              que representa a Argentina en las competiciones oficiales de fútbol masculino. Con tres Copas del Mundo y
+              múltiples Copas América, es uno de los equipos más exitosos y respetados del mundo.
             </p>
-             
+
             <div className="mt-12 rounded-xl overflow-hidden shadow-xl">
               <Image
                 src="/campeones2022.png?height=500&width=1000"
@@ -181,7 +346,14 @@ export default function Home() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {players.map((player, index) => (
-              <PlayerCard key={index} name={player.name} image={player.image} />
+              <PlayerCard
+                key={index}
+                name={player.name}
+                image={player.image}
+                position={player.position}
+                team={player.team}
+                description={player.description}
+              />
             ))}
           </div>
         </div>
@@ -194,7 +366,12 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {achievements.map((achievement, index) => (
-              <AchievementCard key={index} name={achievement.name} description={achievement.description} image={achievement.image} />
+              <AchievementCard
+                key={index}
+                name={achievement.name}
+                description={achievement.description}
+                image={achievement.image}
+              />
             ))}
           </div>
         </div>
@@ -207,12 +384,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {historySections.map((section, index) => (
-              <HistorySection
-                key={index}
-                name={section.name}
-                description={section.description}
-                image={section.image}
-              />
+              <HistorySection key={index} name={section.name} description={section.description} image={section.image} />
             ))}
           </div>
         </div>
@@ -226,15 +398,20 @@ export default function Home() {
 
             <div className="bg-white/80 backdrop-blur-sm rounded-xl p-8 shadow-lg">
               <p className="text-lg text-sky-700 mb-6">
-                Con <span className="font-bold">más de 100 años de historia</span>, la Selección Argentina de Fútbol es una de las más exitosas y reconocidas del mundo, con tres títulos mundiales (1978, 1986 y 2022).
+                Con <span className="font-bold">más de 100 años de historia</span>, la Selección Argentina de Fútbol es
+                una de las más exitosas y reconocidas del mundo, con tres títulos mundiales (1978, 1986 y 2022).
               </p>
 
               <p className="text-lg text-sky-700 mb-6">
-                La Albiceleste ha tenido el privilegio de contar entre sus filas con algunos de los mejores jugadores de la historia, como Alfredo Di Stéfano, Diego Armando Maradona y Lionel Messi, quien ha llevado al equipo a una nueva era dorada.
+                La Albiceleste ha tenido el privilegio de contar entre sus filas con algunos de los mejores jugadores de
+                la historia, como Alfredo Di Stéfano, Diego Armando Maradona y Lionel Messi, quien ha llevado al equipo
+                a una nueva era dorada.
               </p>
 
               <p className="text-lg text-sky-700">
-                Con la dirección técnica de Lionel Scaloni, Argentina ha conseguido tres títulos en tres años: la Copa América 2021, la Finalissima 2022 y la Copa del Mundo 2022, consolidándose como una potencia futbolística mundial.
+                Con la dirección técnica de Lionel Scaloni, Argentina ha conseguido tres títulos en tres años: la Copa
+                América 2021, la Finalissima 2022 y la Copa del Mundo 2022, consolidándose como una potencia
+                futbolística mundial.
               </p>
             </div>
           </div>
@@ -358,7 +535,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="flex items-center gap-3 mb-4 md:mb-0">
-             <img src="/logo.png" width={50} height={50} className="rounded-full" alt="Logo AFA" />
+              <img src="/logo.png" width={50} height={50} className="rounded-full" alt="Logo AFA" />
               <h2 className="text-xl font-bold">Selección Argentina</h2>
             </div>
 
@@ -374,3 +551,4 @@ export default function Home() {
     </main>
   )
 }
+
