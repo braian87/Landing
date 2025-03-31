@@ -1,9 +1,9 @@
 import Image from "next/image"
 import { Facebook, Instagram, MessageCircle, Youtube } from "lucide-react"
 import ContactForm from "@/components/contact-form"
-{/*import PlantCategory from "@/components/plant-category"*/}
+import PlantCategory from "@/components/plant-category"
 import ServiceCard from "@/components/service-card"
-{/*import ProductCategory from "@/components/product-category"*/}
+import ProductCategory from "@/components/product-category"
 import WhatsAppButton from "@/components/whatsapp-button"
 import MobileMenu from "@/components/mobile-menu"
 import Logo from "@/components/logo"
@@ -12,7 +12,7 @@ export default function Home() {
   const whatsappNumber = "+5491163604558"
   const whatsappUrl = `https://wa.me/${whatsappNumber}`
 
-  {/* const plantCategories = [
+  const plantCategories = [
     { name: "Suculentas", image: "/suculentas.png?height=200&width=300" },
     { name: "Cactus", image: "/cactus.png?height=200&width=300" },
     { name: "Flores", image: "/flores.png?height=200&width=300" },
@@ -24,7 +24,7 @@ export default function Home() {
     { name: "Semillas Florales", image: "/semillasflorales.png?height=200&width=300" },
     { name: "Semillas de Hierbas para Gatos y Perros", image: "/semillasdehierbasparagatosyperros.png?height=200&width=300" },
     { name: "Semilla de Césped Resiembra Otoñal", image: "/semillasdecespedresiembraotoñal.png?height=200&width=300" },
-  ] */}
+  ] 
 
   const services = [
     {
@@ -53,8 +53,8 @@ export default function Home() {
       image: "/asesoramiento.png?height=200&width=300",
     },
   ]
-
-  {/*  const productCategories = [
+  
+  const productCategories = [
     {
       name: "Macetas",
       description: "Variedad de macetas de diferentes materiales, tamaños y estilos",
@@ -75,7 +75,7 @@ export default function Home() {
       description: "Tierra, fertilizantes y herramientas para el cuidado de sus plantas",
       image: "/insumos.png?height=200&width=300",
     },
-  ] */}
+  ]
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-amber-50 to-blue-50">
