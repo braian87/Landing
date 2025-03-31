@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { Facebook, Instagram, MessageCircle, Youtube } from "lucide-react"
+import { Facebook, Instagram, MessageCircle, Youtube, Mail, MapPin, Phone, Twitter } from "lucide-react"
 import ContactForm from "@/components/contact-form"
 import PlayerCard from "@/components/player-card"
 import AchievementCard from "@/components/achievement-card"
@@ -531,17 +531,136 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-sky-800 text-white py-8">
+      <footer className="bg-gradient-to-r from-blue-800 to-sky-800 text-white py-12">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row items-center justify-between">
-            <div className="flex items-center gap-3 mb-4 md:mb-0">
-              <img src="/logo.png" width={50} height={50} className="rounded-full" alt="Logo AFA" />
-              <h2 className="text-xl font-bold">Selección Argentina</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* Column 1: Logo and About */}
+            <div className="space-y-4">
+              <div className="flex items-center gap-3 mb-4">
+                <img src="/logo.png" width={60} height={60} className="rounded-full" alt="Logo AFA" />
+                <h2 className="text-2xl font-bold">Selección Argentina</h2>
+              </div>
+              <p className="text-blue-100 text-sm">
+                La Selección Argentina de Fútbol, campeona del mundo y de América, representa la pasión y el orgullo de
+                todo un país.
+              </p>
             </div>
 
-            <p className="text-sm text-sky-200">
+            {/* Column 2: Quick Links */}
+            <div>
+              <h3 className="text-xl font-semibold mb-4 border-b border-blue-400 pb-2">Enlaces Rápidos</h3>
+              <ul className="space-y-2">
+                <li>
+                  <a href="#inicio" className="text-blue-100 hover:text-white transition-colors">
+                    Inicio
+                  </a>
+                </li>
+                <li>
+                  <a href="#jugadores" className="text-blue-100 hover:text-white transition-colors">
+                    Jugadores
+                  </a>
+                </li>
+                <li>
+                  <a href="#logros" className="text-blue-100 hover:text-white transition-colors">
+                    Logros
+                  </a>
+                </li>
+                <li>
+                  <a href="#historia" className="text-blue-100 hover:text-white transition-colors">
+                    Historia
+                  </a>
+                </li>
+                <li>
+                  <a href="#nosotros" className="text-blue-100 hover:text-white transition-colors">
+                    Nosotros
+                  </a>
+                </li>
+                <li>
+                  <a href="#contacto" className="text-blue-100 hover:text-white transition-colors">
+                    Contacto
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            {/* Column 3: Contact Info */}
+            <div>
+              <h3 className="text-xl font-semibold mb-4 border-b border-blue-400 pb-2">Contacto</h3>
+              <ul className="space-y-3">
+                <li className="flex items-center gap-2">
+                  <MapPin className="h-5 w-5 text-blue-300" />
+                  <span className="text-blue-100">Av. Presidente Figueroa Alcorta 7597, Buenos Aires</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <Phone className="h-5 w-5 text-blue-300" />
+                  <span className="text-blue-100">+54 11 4789-1200</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <Mail className="h-5 w-5 text-blue-300" />
+                  <a href="mailto:contacto@afa.org.ar" className="text-blue-100 hover:text-white transition-colors">
+                    contacto@afa.org.ar
+                  </a>
+                </li>
+                <li className="flex items-center gap-2">
+                  <MessageCircle className="h-5 w-5 text-blue-300" />
+                  <a href={whatsappUrl} className="text-blue-100 hover:text-white transition-colors">
+                    {whatsappNumber}
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            {/* Column 4: Social Media and Newsletter */}
+            <div>
+              <h3 className="text-xl font-semibold mb-4 border-b border-blue-400 pb-2">Síguenos</h3>
+              <div className="flex gap-4 mb-6">
+                <a href="#" className="bg-blue-700 hover:bg-blue-600 transition-colors p-2 rounded-full">
+                  <Instagram className="text-white h-5 w-5" />
+                  <span className="sr-only">Instagram</span>
+                </a>
+                <a href="#" className="bg-blue-700 hover:bg-blue-600 transition-colors p-2 rounded-full">
+                  <Twitter className="text-white h-5 w-5" />
+                  <span className="sr-only">Twitter</span>
+                </a>
+                <a href="#" className="bg-blue-700 hover:bg-blue-600 transition-colors p-2 rounded-full">
+                  <Youtube className="text-white h-5 w-5" />
+                  <span className="sr-only">YouTube</span>
+                </a>
+                <a href="#" className="bg-blue-700 hover:bg-blue-600 transition-colors p-2 rounded-full">
+                  <Facebook className="text-white h-5 w-5" />
+                  <span className="sr-only">Facebook</span>
+                </a>
+              </div>
+
+              <h4 className="font-medium mb-2">Suscríbete al Newsletter</h4>
+              <form className="flex">
+                <input
+                  type="email"
+                  placeholder="Tu email"
+                  className="px-3 py-2 rounded-l-md text-gray-800 w-full focus:outline-none"
+                />
+                <button
+                  type="submit"
+                  className="bg-blue-600 hover:bg-blue-500 px-4 py-2 rounded-r-md transition-colors"
+                >
+                  Enviar
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <div className="border-t border-blue-600 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+            <p className="text-sm text-blue-200 mb-4 md:mb-0">
               &copy; {new Date().getFullYear()} Asociación del Fútbol Argentino. Todos los derechos reservados.
             </p>
+            <div className="flex gap-4 text-sm">
+              <a href="#" className="text-blue-200 hover:text-white transition-colors">
+                Términos y Condiciones
+              </a>
+              <a href="#" className="text-blue-200 hover:text-white transition-colors">
+                Política de Privacidad
+              </a>
+            </div>
           </div>
         </div>
       </footer>
