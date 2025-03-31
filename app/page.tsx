@@ -23,8 +23,8 @@ export default function Home() {
     { name: "Semillas Aromáticas", image: "/semillasaromaticas.png?height=200&width=300" },
     { name: "Semillas Florales", image: "/semillasflorales.png?height=200&width=300" },
     { name: "Semillas de Hierbas para Gatos y Perros", image: "/semillasdehierbasparagatosyperros.png?height=200&width=300" },
-    { name: "Semilla de Césped Resiembra Otoñal", image: "/semillasdecespedresiembraotoñal.png?height=200&width=300" },*/
-  ]
+    { name: "Semilla de Césped Resiembra Otoñal", image: "/semillasdecespedresiembraotoñal.png?height=200&width=300" },
+  ]*/
 
   const services = [
     {
