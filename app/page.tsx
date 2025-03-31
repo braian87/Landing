@@ -1,9 +1,9 @@
 import Image from "next/image"
 import { Facebook, Instagram, MessageCircle, Youtube } from "lucide-react"
 import ContactForm from "@/components/contact-form"
-import PlantCategory from "@/components/plant-category"
+{/*import PlantCategory from "@/components/plant-category"*/}
 import ServiceCard from "@/components/service-card"
-import ProductCategory from "@/components/product-category"
+{/*import ProductCategory from "@/components/product-category"*/}
 import WhatsAppButton from "@/components/whatsapp-button"
 import MobileMenu from "@/components/mobile-menu"
 import Logo from "@/components/logo"
