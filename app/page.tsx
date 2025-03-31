@@ -24,6 +24,21 @@ export default function Home() {
     { name: "Semillas Florales", image: "/semillasflorales.png?height=200&width=300" },
     { name: "Semillas de Hierbas para Gatos y Perros", image: "/semillasdehierbasparagatosyperros.png?height=200&width=300" },
     { name: "Semilla de Césped Resiembra Otoñal", image: "/semillasdecespedresiembraotoñal.png?height=200&width=300" },
+    { name: "Suculentas", image: "/suculentas.png?height=200&width=300" },
+    { name: "Cactus", image: "/cactus.png?height=200&width=300" },
+    { name: "Flores", image: "/flores.png?height=200&width=300" },
+    { name: "Arbustos", image: "/arbustos.png?height=200&width=300" },
+    { name: "Plantas de Interior", image: "/plantasdeinterior.png?height=200&width=300" },
+    { name: "Árboles", image: "/arboles.png?height=200&width=300" },
+    { name: "Semillas Hortalizas", image: "/semillashortalizas.png?height=200&width=300" },
+    { name: "Semillas Aromáticas", image: "/semillasaromaticas.png?height=200&width=300" },
+    { name: "Semillas Florales", image: "/semillasflorales.png?height=200&width=300" },
+    { name: "Semillas de Hierbas para Gatos y Perros", image: "/semillasdehierbasparagatosyperros.png?height=200&width=300" },
+    { name: "Semilla de Césped Resiembra Otoñal", image: "/semillasdecespedresiembraotoñal.png?height=200&width=300" },
+    { name: "Semillas Aromáticas", image: "/semillasaromaticas.png?height=200&width=300" },
+    { name: "Semillas Florales", image: "/semillasflorales.png?height=200&width=300" },
+    { name: "Semillas de Hierbas para Gatos y Perros", image: "/semillasdehierbasparagatosyperros.png?height=200&width=300" },
+    { name: "Semilla de Césped Resiembra Otoñal", image: "/semillasdecespedresiembraotoñal.png?height=200&width=300" },
   ] 
 
   const services = [
