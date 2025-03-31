@@ -78,44 +78,44 @@ export default function Home() {
   ]
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-amber-50 to-green-50">
+    <main className="min-h-screen bg-gradient-to-b from-amber-50 to-blue-50">
       {/* Header */}
       <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-sm shadow-sm">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center gap-3">
             <Logo width={50} height={50} className="rounded-full" />
-            <h1 className="text-2xl font-bold text-green-800">Vivero Madre</h1>
+            <h1 className="text-2xl font-bold text-blue-800">Vivero Madre</h1>
           </div>
 
           <nav className="hidden md:block">
             <ul className="flex gap-6">
               <li>
-                <a href="#inicio" className="text-green-700 hover:text-green-500 transition-colors">
+                <a href="#inicio" className="text-blue-700 hover:text-blue-500 transition-colors">
                   Inicio
                 </a>
               </li>
               <li>
-                <a href="#categorias" className="text-green-700 hover:text-green-500 transition-colors">
+                <a href="#categorias" className="text-blue-700 hover:text-blue-500 transition-colors">
                   Categorías
                 </a>
               </li>
               <li>
-                <a href="#servicios" className="text-green-700 hover:text-green-500 transition-colors">
+                <a href="#servicios" className="text-blue-700 hover:text-blue-500 transition-colors">
                   Servicios
                 </a>
               </li>
               <li>
-                <a href="#productos" className="text-green-700 hover:text-green-500 transition-colors">
+                <a href="#productos" className="text-blue-700 hover:text-blue-500 transition-colors">
                   Productos
                 </a>
               </li>
               <li>
-                <a href="#nosotros" className="text-green-700 hover:text-green-500 transition-colors">
+                <a href="#nosotros" className="text-blue-700 hover:text-blue-500 transition-colors">
                   Nosotros
                 </a>
               </li>
               <li>
-                <a href="#contacto" className="text-green-700 hover:text-green-500 transition-colors">
+                <a href="#contacto" className="text-blue-700 hover:text-blue-500 transition-colors">
                   Contacto
                 </a>
               </li>
@@ -129,10 +129,10 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section id="inicio" className="py-16 md:py-24 bg-gradient-to-r from-green-100 to-amber-100">
+      <section id="inicio" className="py-16 md:py-24 bg-gradient-to-r from-blue-100 to-amber-100">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-5xl font-bold text-green-800 mb-6">Más que plantas para tu hogar</h2>
-          <p className="text-xl md:text-2xl text-green-700 max-w-3xl mx-auto">
+          <h2 className="text-3xl md:text-5xl font-bold text-blue-800 mb-6">Más que plantas para tu hogar</h2>
+          <p className="text-xl md:text-2xl text-blue-700 max-w-3xl mx-auto">
             Traemos vida, color y armonía a cada rincón de tu casa
           </p>
         </div>
@@ -142,7 +142,7 @@ export default function Home() {
       <section className="py-12 md:py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <p className="text-lg md:text-xl text-green-700 mb-8">
+            <p className="text-lg md:text-xl text-blue-700 mb-8">
               En Vivero Madre, encontrarás todas las plantas, árboles, flores y más que estás buscando. Somos una
               empresa familiar dedicada a compartir nuestro amor por las plantas y ponerlo a disposición de todos
               aquellos que nos eligen.
@@ -162,9 +162,9 @@ export default function Home() {
       </section>
 
       {/* Plant Categories */}
-      <section id="categorias" className="py-16 md:py-24 bg-green-50">
+      <section id="categorias" className="py-16 md:py-24 bg-blue-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-green-800 text-center mb-12">Nuestras Categorías</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-blue-800 text-center mb-12">Nuestras Categorías</h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {plantCategories.map((category, index) => (
@@ -177,7 +177,7 @@ export default function Home() {
       {/* Services Section */}
       <section id="servicios" className="py-16 md:py-24 bg-amber-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-green-800 text-center mb-12">Prestación de Servicios</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-blue-800 text-center mb-12">Prestación de Servicios</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
@@ -190,7 +190,7 @@ export default function Home() {
       {/* Other Products */}
       <section id="productos" className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-green-800 text-center mb-12">Otros Productos</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-blue-800 text-center mb-12">Otros Productos</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {productCategories.map((category, index) => (
@@ -206,24 +206,24 @@ export default function Home() {
       </section>
 
       {/* About Us */}
-      <section id="nosotros" className="py-16 md:py-24 bg-gradient-to-r from-green-100 to-amber-100">
+      <section id="nosotros" className="py-16 md:py-24 bg-gradient-to-r from-blue-100 to-amber-100">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-green-800 text-center mb-12">Sobre Nosotros</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-blue-800 text-center mb-12">Sobre Nosotros</h2>
 
             <div className="bg-white/80 backdrop-blur-sm rounded-xl p-8 shadow-lg">
-              <p className="text-lg text-green-700 mb-6">
+              <p className="text-lg text-blue-700 mb-6">
                 Con <span className="font-bold">20 años de experiencia</span>, Vivero Madre es un negocio familiar que
                 comenzó en Córdoba con la pasión por las plantas y la naturaleza.
               </p>
 
-              <p className="text-lg text-green-700 mb-6">
+              <p className="text-lg text-blue-700 mb-6">
                 Buscamos contribuir con nuestro trabajo no solo agregando color y vida a tu hogar, sino también creando
                 una conexión tanto con tus plantas de interior como con tu jardín. Tú les das vida a las plantas, y
                 ellas te devuelven felicidad.
               </p>
 
-              <p className="text-lg text-green-700">
+              <p className="text-lg text-blue-700">
                 No hay nada más hermoso que entrar a cualquier espacio y encontrar una planta bellamente cuidada y
                 espléndida.
               </p>
@@ -233,19 +233,19 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contacto" className="py-16 md:py-24 bg-green-50">
+      <section id="contacto" className="py-16 md:py-24 bg-blue-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-green-800 text-center mb-12">Contáctanos</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-blue-800 text-center mb-12">Contáctanos</h2>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div className="bg-white rounded-xl p-8 shadow-lg">
-              <h3 className="text-2xl font-bold text-green-700 mb-6">Información de Contacto</h3>
+              <h3 className="text-2xl font-bold text-blue-700 mb-6">Información de Contacto</h3>
 
               <div className="space-y-4">
                 <p className="flex items-center gap-3">
-                  <MessageCircle className="text-green-600" />
+                  <MessageCircle className="text-blue-600" />
                   <span>WhatsApp: </span>
-                  <a href={whatsappUrl} className="text-green-600 hover:underline">
+                  <a href={whatsappUrl} className="text-blue-600 hover:underline">
                     {whatsappNumber}
                   </a>
                 </p>
@@ -261,13 +261,13 @@ export default function Home() {
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    className="text-green-600"
+                    className="text-blue-600"
                   >
                     <rect width="20" height="16" x="2" y="4" rx="2" />
                     <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
                   </svg>
                   <span>Email: </span>
-                  <a href="mailto:viveromadre@gmail.com" className="text-green-600 hover:underline">
+                  <a href="mailto:viveromadre@gmail.com" className="text-blue-600 hover:underline">
                     viveromadre@gmail.com
                   </a>
                 </p>
@@ -283,28 +283,28 @@ export default function Home() {
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    className="text-green-600"
+                    className="text-blue-600"
                   >
                     <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
                     <circle cx="12" cy="10" r="3" />
                   </svg>
                   <span>Ubicación: </span>
                 </div>
-                <address className="not-italic pl-10 text-green-700">
+                <address className="not-italic pl-10 text-blue-700">
                   Calle Pública 123, Villa del Dique, Cordoba, Argentina
                 </address>
               </div>
 
               <div className="mt-10">
-                <h3 className="text-2xl font-bold text-green-700 mb-6">Síguenos</h3>
+                <h3 className="text-2xl font-bold text-blue-700 mb-6">Síguenos</h3>
 
                 <div className="flex gap-4">
-                  <a href="#" className="bg-green-100 hover:bg-green-200 transition-colors p-3 rounded-full">
-                    <Instagram className="text-green-700 h-6 w-6" />
+                  <a href="#" className="bg-blue-100 hover:bg-blue-200 transition-colors p-3 rounded-full">
+                    <Instagram className="text-blue-700 h-6 w-6" />
                     <span className="sr-only">Instagram</span>
                   </a>
 
-                  <a href="#" className="bg-green-100 hover:bg-green-200 transition-colors p-3 rounded-full">
+                  <a href="#" className="bg-blue-100 hover:bg-blue-200 transition-colors p-3 rounded-full">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -315,7 +315,7 @@ export default function Home() {
                       strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      className="text-green-700 h-6 w-6"
+                      className="text-blue-700 h-6 w-6"
                     >
                       <path d="M9 12 11 14 15 10" />
                       <circle cx="12" cy="12" r="10" />
@@ -323,13 +323,13 @@ export default function Home() {
                     <span className="sr-only">TikTok</span>
                   </a>
 
-                  <a href="#" className="bg-green-100 hover:bg-green-200 transition-colors p-3 rounded-full">
-                    <Youtube className="text-green-700 h-6 w-6" />
+                  <a href="#" className="bg-blue-100 hover:bg-blue-200 transition-colors p-3 rounded-full">
+                    <Youtube className="text-blue-700 h-6 w-6" />
                     <span className="sr-only">YouTube</span>
                   </a>
 
-                  <a href="#" className="bg-green-100 hover:bg-green-200 transition-colors p-3 rounded-full">
-                    <Facebook className="text-green-700 h-6 w-6" />
+                  <a href="#" className="bg-blue-100 hover:bg-blue-200 transition-colors p-3 rounded-full">
+                    <Facebook className="text-blue-700 h-6 w-6" />
                     <span className="sr-only">Facebook</span>
                   </a>
                 </div>
@@ -337,7 +337,7 @@ export default function Home() {
             </div>
 
             <div className="bg-white rounded-xl p-8 shadow-lg">
-              <h3 className="text-2xl font-bold text-green-700 mb-6">Envíanos un Mensaje</h3>
+              <h3 className="text-2xl font-bold text-blue-700 mb-6">Envíanos un Mensaje</h3>
               <ContactForm whatsappNumber={whatsappNumber} />
             </div>
           </div>
@@ -345,7 +345,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-green-800 text-white py-8">
+      <footer className="bg-blue-800 text-white py-8">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="flex items-center gap-3 mb-4 md:mb-0">
@@ -353,7 +353,7 @@ export default function Home() {
               <h2 className="text-xl font-bold">Vivero Madre</h2>
             </div>
 
-            <p className="text-sm text-green-200">
+            <p className="text-sm text-blue-200">
               &copy; {new Date().getFullYear()} Vivero Madre. Todos los derechos reservados.
             </p>
           </div>
