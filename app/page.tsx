@@ -94,21 +94,21 @@ export default function Home() {
                   Inicio
                 </a>
               </li>
-  {/*<li>
+              <li>
                 <a href="#categorias" className="text-blue-700 hover:text-blue-500 transition-colors">
                   Categorias
                 </a>
-              </li>*/}
+              </li>
               <li>
                 <a href="#servicios" className="text-blue-700 hover:text-blue-500 transition-colors">
                   Servicios
                 </a>
               </li>
-  {/*<li>
+              <li>
                 <a href="#productos" className="text-blue-700 hover:text-blue-500 transition-colors">
                   Productos
                 </a>
-              </li>*/}
+              </li>
               <li>
                 <a href="#nosotros" className="text-blue-700 hover:text-blue-500 transition-colors">
                   Nosotros
