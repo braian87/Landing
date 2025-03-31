@@ -12,7 +12,7 @@ export default function Home() {
   const whatsappNumber = "+5491163604558"
   const whatsappUrl = `https://wa.me/${whatsappNumber}`
 
-  /*const plantCategories = [
+  const plantCategories = [
     { name: "Suculentas", image: "/suculentas.png?height=200&width=300" },
     { name: "Cactus", image: "/cactus.png?height=200&width=300" },
     { name: "Flores", image: "/flores.png?height=200&width=300" },
@@ -24,7 +24,7 @@ export default function Home() {
     { name: "Semillas Florales", image: "/semillasflorales.png?height=200&width=300" },
     { name: "Semillas de Hierbas para Gatos y Perros", image: "/semillasdehierbasparagatosyperros.png?height=200&width=300" },
     { name: "Semilla de Césped Resiembra Otoñal", image: "/semillasdecespedresiembraotoñal.png?height=200&width=300" },
-  ]*/
+  ]
 
   const services = [
     {
@@ -54,7 +54,7 @@ export default function Home() {
     },
   ]
 
-  /*const productCategories = [
+  const productCategories = [
     {
       name: "Macetas",
       description: "Variedad de macetas de diferentes materiales, tamaños y estilos",
@@ -75,7 +75,7 @@ export default function Home() {
       description: "Tierra, fertilizantes y herramientas para el cuidado de sus plantas",
       image: "/insumos.png?height=200&width=300",
     },
-  ] */
+  ] 
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-amber-50 to-blue-50">
@@ -96,7 +96,7 @@ export default function Home() {
               </li>
               <li>
                 <a href="#categorias" className="text-blue-700 hover:text-blue-500 transition-colors">
-                  
+                  Categorias
                 </a>
               </li>
               <li>
@@ -106,7 +106,7 @@ export default function Home() {
               </li>
               <li>
                 <a href="#productos" className="text-blue-700 hover:text-blue-500 transition-colors">
-                  
+                  Productos
                 </a>
               </li>
               <li>
@@ -147,7 +147,7 @@ export default function Home() {
               empresa familiar dedicada a compartir nuestro amor por las plantas y ponerlo a disposición de todos
               aquellos que nos eligen.
             </p>
-
+             
             <div className="mt-12 rounded-xl overflow-hidden shadow-xl">
               <Image
                 src="/imagenreprecentativa.png?height=500&width=1000"
