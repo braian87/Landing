@@ -1,11 +1,15 @@
 import Image from "next/image"
-import { Facebook, Instagram, MessageCircle, Youtube, Mail, MapPin, Phone, Twitter } from "lucide-react"
+import { Facebook, Instagram, MessageCircle, Youtube } from "lucide-react"
 import ContactForm from "@/components/contact-form"
 import PlayerCard from "@/components/player-card"
 import AchievementCard from "@/components/achievement-card"
 import HistorySection from "@/components/history-section"
 import WhatsAppButton from "@/components/whatsapp-button"
 import MobileMenu from "@/components/mobile-menu"
+import WorldCupCard from "@/components/world-cup-card"
+import CopaAmericaCard from "@/components/copa-america-card"
+import FinalCard from "@/components/final-card"
+import RecordCard from "@/components/record-card"
 
 export default function Home() {
   const whatsappNumber = "+5491163604558"
@@ -255,6 +259,251 @@ export default function Home() {
     },
   ]
 
+  // Datos de los Mundiales
+  const worldCups = [
+    {
+      year: "2022",
+      host: "Qatar",
+      result: "Campeón",
+      position: "1°",
+      coach: "Lionel Scaloni",
+      topScorer: "Lionel Messi (7 goles)",
+      goals: "15 goles en 7 partidos",
+      image: "/mundial2022.png?height=200&width=300",
+      details:
+        "Argentina logró su tercera Copa del Mundo tras vencer a Francia en una épica final que terminó 3-3 y se definió por penales (4-2). Messi fue elegido el mejor jugador del torneo, anotando en todos los partidos de eliminación directa, incluido un doblete en la final. El equipo superó a Australia (2-1), Países Bajos (penales tras 2-2) y Croacia (3-0) en su camino a la gloria.",
+    },
+    {
+      year: "1986",
+      host: "México",
+      result: "Campeón",
+      position: "1°",
+      coach: "Carlos Bilardo",
+      topScorer: "Diego Maradona (5 goles)",
+      goals: "14 goles en 7 partidos",
+      image: "/mundial1986.png?height=200&width=300",
+      details:
+        "Argentina conquistó su segunda Copa del Mundo con Diego Maradona como figura estelar. El '10' brilló especialmente en cuartos de final contra Inglaterra con los dos goles más famosos de la historia: 'La Mano de Dios' y el considerado 'Gol del Siglo'. En semifinales, venció a Bélgica (2-0) y en la final derrotó a Alemania Federal por 3-2 con goles de Brown, Valdano y Burruchaga.",
+    },
+    {
+      year: "1978",
+      host: "Argentina",
+      result: "Campeón",
+      position: "1°",
+      coach: "César Luis Menotti",
+      topScorer: "Mario Kempes (6 goles)",
+      goals: "15 goles en 7 partidos",
+      image: "/mundial1978.png?height=200&width=300",
+      details:
+        "Argentina ganó su primera Copa del Mundo como anfitrión. Tras superar la primera fase, venció a Polonia, Brasil y Perú en la segunda ronda para clasificar a la final. En un partido memorable contra Países Bajos, Argentina se impuso 3-1 en tiempo extra con dos goles de Mario Kempes, quien fue el goleador y mejor jugador del torneo. Daniel Bertoni anotó el tercer gol que selló la victoria.",
+    },
+    {
+      year: "2014",
+      host: "Brasil",
+      result: "Subcampeón",
+      position: "2°",
+      coach: "Alejandro Sabella",
+      topScorer: "Lionel Messi (4 goles)",
+      goals: "8 goles en 7 partidos",
+      image: "/mundial2014.png?height=200&width=300",
+      details:
+        "Argentina llegó a su quinta final mundialista, pero cayó ante Alemania por 1-0 en tiempo extra con gol de Götze. El equipo mostró gran solidez defensiva durante todo el torneo, eliminando a Suiza, Bélgica y Países Bajos en su camino a la final. Messi fue elegido mejor jugador del torneo, aunque la decisión generó controversia. Javier Mascherano destacó como pieza clave en el mediocampo.",
+    },
+    {
+      year: "1990",
+      host: "Italia",
+      result: "Subcampeón",
+      position: "2°",
+      coach: "Carlos Bilardo",
+      topScorer: "Claudio Caniggia (2 goles)",
+      goals: "5 goles en 7 partidos",
+      image: "/mundial1990.png?height=200&width=300",
+      details:
+        "Argentina alcanzó su tercera final consecutiva, pero perdió 1-0 ante Alemania Federal con un polémico penal convertido por Andreas Brehme. El equipo, liderado por Maradona (quien jugó lesionado), mostró gran carácter al eliminar a Brasil en octavos, a Yugoslavia por penales en cuartos y a Italia también por penales en semifinales, en el estadio San Paolo de Nápoles.",
+    },
+    {
+      year: "2006",
+      host: "Alemania",
+      result: "Cuartos de final",
+      position: "6°",
+      coach: "José Pekerman",
+      topScorer: "Hernán Crespo (3 goles)",
+      goals: "11 goles en 5 partidos",
+      image: "/mundial2006.png?height=200&width=300",
+      details:
+        "Argentina mostró un gran nivel de juego, especialmente en la fase de grupos y en octavos de final contra México (2-1 en tiempo extra). En cuartos se enfrentó a Alemania y, tras empatar 1-1, cayó en la tanda de penales. El partido quedó marcado por la polémica decisión de Pekerman de no hacer ingresar a Lionel Messi y sacar a Juan Román Riquelme en los minutos finales.",
+    },
+  ]
+
+  // Datos de las Copas América
+  const copaAmericas = [
+    {
+      year: "2024",
+      host: "Estados Unidos",
+      result: "Campeón",
+      position: "1°",
+      coach: "Lionel Scaloni",
+      topScorer: "Lautaro Martínez (5 goles)",
+      goals: "12 goles en 6 partidos",
+      image: "/copaamerica2024.png?height=200&width=300",
+      details:
+        "Argentina revalidó su título continental con un equipo sólido liderado por Messi, quien a pesar de sufrir una lesión en la final, fue clave en el torneo. El equipo venció a Chile, Perú y Canadá en fase de grupos, a Ecuador en cuartos, a Canadá en semifinales y a Colombia en la final con gol de Lautaro Martínez en tiempo extra. 'El Toro' fue el goleador del torneo.",
+    },
+    {
+      year: "2021",
+      host: "Brasil",
+      result: "Campeón",
+      position: "1°",
+      coach: "Lionel Scaloni",
+      topScorer: "Lionel Messi (4 goles)",
+      goals: "12 goles en 7 partidos",
+      image: "/copaamerica2021.png?height=200&width=300",
+      details:
+        "Argentina rompió una sequía de 28 años sin títulos al vencer a Brasil 1-0 en el Maracaná con gol de Ángel Di María. Messi logró su primer título con la selección mayor y fue elegido mejor jugador y goleador del torneo. El equipo mostró solidez defensiva y eficacia ofensiva, con destacadas actuaciones de Rodrigo De Paul, Emiliano Martínez y Giovani Lo Celso.",
+    },
+    {
+      year: "1993",
+      host: "Ecuador",
+      result: "Campeón",
+      position: "1°",
+      coach: "Alfio Basile",
+      topScorer: "Gabriel Batistuta (6 goles)",
+      goals: "11 goles en 6 partidos",
+      image: "/copaamerica1993.png?height=200&width=300",
+      details:
+        "Argentina revalidó su título de 1991 con un equipo que combinaba experiencia y juventud. Tras superar la fase de grupos, venció a Brasil por 6-5 en penales en cuartos de final y a Colombia por 2-1 en semifinales. En la final derrotó a México por 2-1 con goles de Batistuta y Balbo. Destacaron figuras como Redondo, Simeone y Caniggia.",
+    },
+    {
+      year: "1991",
+      host: "Chile",
+      result: "Campeón",
+      position: "1°",
+      coach: "Alfio Basile",
+      topScorer: "Gabriel Batistuta (6 goles)",
+      goals: "16 goles en 7 partidos",
+      image: "/copaamerica1991.png?height=200&width=300",
+      details:
+        "Argentina conquistó su decimotercera Copa América con un equipo renovado tras el Mundial de 1990. Ganó todos sus partidos en la fase de grupos y en la fase final venció a Chile (2-0) y a Colombia (2-1) antes de derrotar a Brasil en la final por 3-2 con un doblete de Claudio Caniggia y un gol de Darío Franco. Batistuta fue el goleador del torneo.",
+    },
+    {
+      year: "1959",
+      host: "Argentina",
+      result: "Campeón",
+      position: "1°",
+      coach: "José Manuel Moreno",
+      topScorer: "José Sanfilippo (5 goles)",
+      goals: "11 goles en 4 partidos",
+      image: "/copaamerica1959.png?height=200&width=300",
+      details:
+        "Argentina ganó su duodécima Copa América como anfitrión en un torneo donde participaron solo siete equipos. El formato fue de todos contra todos, y Argentina se coronó campeón tras ganar todos sus partidos. Destacaron figuras como José Sanfilippo, quien fue el goleador del torneo, y Amadeo Carrizo en el arco.",
+    },
+  ]
+
+  // Datos de las Finales
+  const finals = [
+    {
+      tournament: "Copa Mundial FIFA",
+      year: "2022",
+      opponent: "Francia",
+      result: "3-3 (4-2 penales)",
+      venue: "Estadio Lusail, Qatar",
+      scorers: "Messi (2), Di María",
+      image: "/final-mundial2022.png?height=200&width=300",
+      details:
+        "Una de las mejores finales de la historia. Argentina dominó y se puso 2-0 con goles de Messi y Di María. Francia empató con doblete de Mbappé. En el tiempo extra, Messi volvió a adelantar a Argentina, pero Mbappé igualó de penal. En la tanda, el 'Dibu' Martínez fue figura y Montiel convirtió el penal decisivo para el 4-2 final.",
+    },
+    {
+      tournament: "Copa América",
+      year: "2024",
+      opponent: "Colombia",
+      result: "1-0 (prórroga)",
+      venue: "Hard Rock Stadium, Miami",
+      scorers: "Lautaro Martínez",
+      image: "/final-copaamerica2024.png?height=200&width=300",
+      details:
+        "Final muy disputada donde Messi sufrió una lesión en el tobillo que lo obligó a jugar con limitaciones. El partido fue muy físico y llegó a la prórroga sin goles. En el minuto 112, Lautaro Martínez definió con calidad tras una gran asistencia de Lo Celso para dar a Argentina su decimosexto título continental.",
+    },
+    {
+      tournament: "Copa América",
+      year: "2021",
+      opponent: "Brasil",
+      result: "1-0",
+      venue: "Estadio Maracaná, Río de Janeiro",
+      scorers: "Ángel Di María",
+      image: "/final-copaamerica2021.png?height=200&width=300",
+      details:
+        "Argentina rompió una sequía de 28 años sin títulos en el templo del fútbol brasileño. A los 22 minutos, Di María definió con una exquisita vaselina tras un pase largo de De Paul. La defensa argentina, con un 'Dibu' Martínez inspirado, contuvo los ataques de Brasil para darle a Messi su primer título con la selección mayor.",
+    },
+    {
+      tournament: "Finalissima",
+      year: "2022",
+      opponent: "Italia",
+      result: "3-0",
+      venue: "Estadio de Wembley, Londres",
+      scorers: "Lautaro Martínez, Di María, Dybala",
+      image: "/final-finalissima2022.png?height=200&width=300",
+      details:
+        "Argentina dominó de principio a fin al campeón de Europa. Lautaro abrió el marcador tras una gran jugada colectiva, Di María amplió con una definición exquisita antes del descanso y Dybala selló la goleada en el último minuto. Una exhibición de fútbol que confirmó el excelente momento del equipo de Scaloni.",
+    },
+    {
+      tournament: "Copa Mundial FIFA",
+      year: "2014",
+      opponent: "Alemania",
+      result: "0-1 (prórroga)",
+      venue: "Estadio Maracaná, Río de Janeiro",
+      scorers: "-",
+      image: "/final-mundial2014.png?height=200&width=300",
+      details:
+        "Argentina tuvo las mejores ocasiones en los 90 minutos con Higuaín, Messi y Palacio, pero no logró convertir. En el minuto 113, Götze controló un centro de Schürrle y definió ante Romero para dar el título a Alemania. Messi fue elegido mejor jugador del torneo, aunque la decisión generó controversia.",
+    },
+  ]
+
+  // Datos de los Récords
+  const records = [
+    {
+      title: "Máximo goleador",
+      description: "Récord de más goles con la selección argentina en partidos oficiales y amistosos.",
+      holder: "Lionel Messi",
+      value: "106 goles",
+      image: "/record-messi-goles.png?height=200&width=300",
+    },
+    {
+      title: "Más partidos",
+      description: "Récord de más partidos disputados con la camiseta albiceleste.",
+      holder: "Lionel Messi",
+      value: "180 partidos",
+      image: "/record-messi-partidos.png?height=200&width=300",
+    },
+    {
+      title: "Más títulos como DT",
+      description: "Entrenador con más títulos oficiales al frente de la selección argentina.",
+      holder: "Lionel Scaloni",
+      value: "3 títulos (Mundial 2022, Copa América 2021 y 2024)",
+      image: "/record-scaloni.png?height=200&width=300",
+    },
+    {
+      title: "Mayor goleada",
+      description: "Victoria más abultada en la historia de la selección argentina.",
+      holder: "Argentina vs. Ecuador (1941)",
+      value: "12-0",
+      image: "/record-goleada.png?height=200&width=300",
+    },
+    {
+      title: "Más Copas América",
+      description: "Selección con más títulos en la Copa América, junto con Uruguay.",
+      holder: "Argentina",
+      value: "15 títulos",
+      image: "/record-copas-america.png?height=200&width=300",
+    },
+    {
+      title: "Invicto más largo",
+      description: "Mayor cantidad de partidos consecutivos sin perder.",
+      holder: "Selección de Scaloni (2019-2022)",
+      value: "36 partidos",
+      image: "/record-invicto.png?height=200&width=300",
+    },
+  ]
+
   return (
     <main className="min-h-screen bg-gradient-to-b from-blue-50 to-sky-50">
       {/* Header */}
@@ -280,6 +529,26 @@ export default function Home() {
               <li>
                 <a href="#logros" className="text-sky-700 hover:text-sky-500 transition-colors">
                   Logros
+                </a>
+              </li>
+              <li>
+                <a href="#mundiales" className="text-sky-700 hover:text-sky-500 transition-colors">
+                  Mundiales
+                </a>
+              </li>
+              <li>
+                <a href="#copas-america" className="text-sky-700 hover:text-sky-500 transition-colors">
+                  Copas América
+                </a>
+              </li>
+              <li>
+                <a href="#finales" className="text-sky-700 hover:text-sky-500 transition-colors">
+                  Finales
+                </a>
+              </li>
+              <li>
+                <a href="#records" className="text-sky-700 hover:text-sky-500 transition-colors">
+                  Récords
                 </a>
               </li>
               <li>
@@ -377,8 +646,99 @@ export default function Home() {
         </div>
       </section>
 
+      {/* World Cups Section */}
+      <section id="mundiales" className="py-16 md:py-24 bg-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-sky-800 text-center mb-12">Mundiales</h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {worldCups.map((worldCup, index) => (
+              <WorldCupCard
+                key={index}
+                year={worldCup.year}
+                host={worldCup.host}
+                result={worldCup.result}
+                position={worldCup.position}
+                coach={worldCup.coach}
+                topScorer={worldCup.topScorer}
+                goals={worldCup.goals}
+                image={worldCup.image}
+                details={worldCup.details}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Copa America Section */}
+      <section id="copas-america" className="py-16 md:py-24 bg-sky-50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-sky-800 text-center mb-12">Copas América</h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {copaAmericas.map((copaAmerica, index) => (
+              <CopaAmericaCard
+                key={index}
+                year={copaAmerica.year}
+                host={copaAmerica.host}
+                result={copaAmerica.result}
+                position={copaAmerica.position}
+                coach={copaAmerica.coach}
+                topScorer={copaAmerica.topScorer}
+                goals={copaAmerica.goals}
+                image={copaAmerica.image}
+                details={copaAmerica.details}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Finals Section */}
+      <section id="finales" className="py-16 md:py-24 bg-blue-50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-sky-800 text-center mb-12">Finales Históricas</h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {finals.map((final, index) => (
+              <FinalCard
+                key={index}
+                tournament={final.tournament}
+                year={final.year}
+                opponent={final.opponent}
+                result={final.result}
+                venue={final.venue}
+                scorers={final.scorers}
+                image={final.image}
+                details={final.details}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Records Section */}
+      <section id="records" className="py-16 md:py-24 bg-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-sky-800 text-center mb-12">Récords</h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {records.map((record, index) => (
+              <RecordCard
+                key={index}
+                title={record.title}
+                description={record.description}
+                holder={record.holder}
+                value={record.value}
+                image={record.image}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* History Section */}
-      <section id="historia" className="py-16 md:py-24 bg-white">
+      <section id="historia" className="py-16 md:py-24 bg-sky-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-sky-800 text-center mb-12">Historia</h2>
 
@@ -491,25 +851,6 @@ export default function Home() {
                   </a>
 
                   <a href="#" className="bg-sky-100 hover:bg-sky-200 transition-colors p-3 rounded-full">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="text-sky-700 h-6 w-6"
-                    >
-                      <path d="M9 12 11 14 15 10" />
-                      <circle cx="12" cy="12" r="10" />
-                    </svg>
-                    <span className="sr-only">TikTok</span>
-                  </a>
-
-                  <a href="#" className="bg-sky-100 hover:bg-sky-200 transition-colors p-3 rounded-full">
                     <Youtube className="text-sky-700 h-6 w-6" />
                     <span className="sr-only">YouTube</span>
                   </a>
@@ -531,136 +872,17 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gradient-to-r from-blue-800 to-sky-800 text-white py-12">
+      <footer className="bg-sky-800 text-white py-8">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {/* Column 1: Logo and About */}
-            <div className="space-y-4">
-              <div className="flex items-center gap-3 mb-4">
-                <img src="/logo.png" width={60} height={60} className="rounded-full" alt="Logo AFA" />
-                <h2 className="text-2xl font-bold">Selección Argentina</h2>
-              </div>
-              <p className="text-blue-100 text-sm">
-                La Selección Argentina de Fútbol, campeona del mundo y de América, representa la pasión y el orgullo de
-                todo un país.
-              </p>
+          <div className="flex flex-col md:flex-row items-center justify-between">
+            <div className="flex items-center gap-3 mb-4 md:mb-0">
+              <img src="/logo.png" width={50} height={50} className="rounded-full" alt="Logo AFA" />
+              <h2 className="text-xl font-bold">Selección Argentina</h2>
             </div>
 
-            {/* Column 2: Quick Links */}
-            <div>
-              <h3 className="text-xl font-semibold mb-4 border-b border-blue-400 pb-2">Enlaces Rápidos</h3>
-              <ul className="space-y-2">
-                <li>
-                  <a href="#inicio" className="text-blue-100 hover:text-white transition-colors">
-                    Inicio
-                  </a>
-                </li>
-                <li>
-                  <a href="#jugadores" className="text-blue-100 hover:text-white transition-colors">
-                    Jugadores
-                  </a>
-                </li>
-                <li>
-                  <a href="#logros" className="text-blue-100 hover:text-white transition-colors">
-                    Logros
-                  </a>
-                </li>
-                <li>
-                  <a href="#historia" className="text-blue-100 hover:text-white transition-colors">
-                    Historia
-                  </a>
-                </li>
-                <li>
-                  <a href="#nosotros" className="text-blue-100 hover:text-white transition-colors">
-                    Nosotros
-                  </a>
-                </li>
-                <li>
-                  <a href="#contacto" className="text-blue-100 hover:text-white transition-colors">
-                    Contacto
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            {/* Column 3: Contact Info */}
-            <div>
-              <h3 className="text-xl font-semibold mb-4 border-b border-blue-400 pb-2">Contacto</h3>
-              <ul className="space-y-3">
-                <li className="flex items-center gap-2">
-                  <MapPin className="h-5 w-5 text-blue-300" />
-                  <span className="text-blue-100">Av. Presidente Figueroa Alcorta 7597, Buenos Aires</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <Phone className="h-5 w-5 text-blue-300" />
-                  <span className="text-blue-100">+54 11 4789-1200</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <Mail className="h-5 w-5 text-blue-300" />
-                  <a href="mailto:contacto@afa.org.ar" className="text-blue-100 hover:text-white transition-colors">
-                    contacto@afa.org.ar
-                  </a>
-                </li>
-                <li className="flex items-center gap-2">
-                  <MessageCircle className="h-5 w-5 text-blue-300" />
-                  <a href={whatsappUrl} className="text-blue-100 hover:text-white transition-colors">
-                    {whatsappNumber}
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            {/* Column 4: Social Media and Newsletter */}
-            <div>
-              <h3 className="text-xl font-semibold mb-4 border-b border-blue-400 pb-2">Síguenos</h3>
-              <div className="flex gap-4 mb-6">
-                <a href="#" className="bg-blue-700 hover:bg-blue-600 transition-colors p-2 rounded-full">
-                  <Instagram className="text-white h-5 w-5" />
-                  <span className="sr-only">Instagram</span>
-                </a>
-                <a href="#" className="bg-blue-700 hover:bg-blue-600 transition-colors p-2 rounded-full">
-                  <Twitter className="text-white h-5 w-5" />
-                  <span className="sr-only">Twitter</span>
-                </a>
-                <a href="#" className="bg-blue-700 hover:bg-blue-600 transition-colors p-2 rounded-full">
-                  <Youtube className="text-white h-5 w-5" />
-                  <span className="sr-only">YouTube</span>
-                </a>
-                <a href="#" className="bg-blue-700 hover:bg-blue-600 transition-colors p-2 rounded-full">
-                  <Facebook className="text-white h-5 w-5" />
-                  <span className="sr-only">Facebook</span>
-                </a>
-              </div>
-
-              <h4 className="font-medium mb-2">Suscríbete al Newsletter</h4>
-              <form className="flex">
-                <input
-                  type="email"
-                  placeholder="Tu email"
-                  className="px-3 py-2 rounded-l-md text-gray-800 w-full focus:outline-none"
-                />
-                <button
-                  type="submit"
-                  className="bg-blue-600 hover:bg-blue-500 px-4 py-2 rounded-r-md transition-colors"
-                >
-                  Enviar
-                </button>
-              </form>
-            </div>
-          </div>
-
-          <div className="border-t border-blue-600 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-            <p className="text-sm text-blue-200 mb-4 md:mb-0">
+            <p className="text-sm text-sky-200">
               &copy; {new Date().getFullYear()} Asociación del Fútbol Argentino. Todos los derechos reservados.
             </p>
-            <div className="flex gap-4 text-sm">
-              <a href="#" className="text-blue-200 hover:text-white transition-colors">
-                Términos y Condiciones
-              </a>
-              <a href="#" className="text-blue-200 hover:text-white transition-colors">
-                Política de Privacidad
-              </a>
-            </div>
           </div>
         </div>
       </footer>
