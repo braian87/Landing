@@ -57,6 +57,34 @@ export default function MobileMenu() {
               Logros
             </a>
             <a
+              href="#mundiales"
+              className="block rounded-lg px-4 py-2 text-blue-700 hover:bg-blue-50"
+              onClick={handleLinkClick}
+            >
+              Mundiales
+            </a>
+            <a
+              href="#copas-america"
+              className="block rounded-lg px-4 py-2 text-blue-700 hover:bg-blue-50"
+              onClick={handleLinkClick}
+            >
+              Copas América
+            </a>
+            <a
+              href="#finales"
+              className="block rounded-lg px-4 py-2 text-blue-700 hover:bg-blue-50"
+              onClick={handleLinkClick}
+            >
+              Finales
+            </a>
+            <a
+              href="#records"
+              className="block rounded-lg px-4 py-2 text-blue-700 hover:bg-blue-50"
+              onClick={handleLinkClick}
+            >
+              Récords
+            </a>
+            <a
               href="#historia"
               className="block rounded-lg px-4 py-2 text-blue-700 hover:bg-blue-50"
               onClick={handleLinkClick}
